@@ -47,6 +47,7 @@ return {
         sh = { "shfmt" },
         php = { "pint" },
         blade = { "blade-formatter", "rustywind" },
+        javascript = { "prettierd" },
       },
       -- The options you set here will be merged with the builtin formatters.
       -- You can also define any custom formatters here.
