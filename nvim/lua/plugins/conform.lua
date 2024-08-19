@@ -5,15 +5,16 @@ return {
     "mason.nvim",
     opts = {
       ensure_installed = {
-        "rubocop",
-        "rufo",
-        "rubyfmt",
         "rustywind",
         "prettier",
         "prettierd",
         "pretty-php",
         "blade-formatter",
         "pint",
+        "standardrb",
+        "yamlfmt",
+        "stylua",
+        "jq",
       },
     },
   },
@@ -41,13 +42,15 @@ return {
       formatters_by_ft = {
         eruby = { "erb_format", "rustywind" },
         css = { "prettierd" },
-        ruby = { "rubyfmt" },
+        ruby = { "standardrb" },
         lua = { "stylua" },
         fish = { "fish_indent" },
         sh = { "shfmt" },
+        yaml = { "yamlfmt" },
         php = { "pint" },
         blade = { "blade-formatter", "rustywind" },
         javascript = { "prettierd" },
+        json = { "jq" },
       },
       -- The options you set here will be merged with the builtin formatters.
       -- You can also define any custom formatters here.
