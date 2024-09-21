@@ -14,11 +14,20 @@ return {
   },
   opts = {
     servers = {
+      html = {
+        enabled = true,
+        files = {
+          associations = { "*.html", "*.css", "*.scss", "*.js", "*.jsx", "*.ts", "*.tsx", "*.edge" },
+        },
+      },
       stimulus_ls = {
         enabled = true,
       },
       tailwindcss = {
         enabled = true,
+        files = {
+          associations = { "*.html", "*.css", "*.scss", "*.js", "*.jsx", "*.ts", "*.tsx", "*.edge" },
+        },
       },
       cssls = {
         enabled = true,

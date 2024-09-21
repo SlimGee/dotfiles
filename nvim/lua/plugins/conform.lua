@@ -49,7 +49,9 @@ return {
         yaml = { "yamlfmt" },
         php = { "pint" },
         blade = { "blade-formatter", "rustywind" },
-        javascript = { "prettierd" },
+        javascript = { "prettier" },
+        typescript = { "prettier" },
+        html = { "prettier", "rustywind" },
         json = { "jq" },
       },
       -- The options you set here will be merged with the builtin formatters.

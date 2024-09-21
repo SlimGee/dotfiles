@@ -38,6 +38,20 @@ return {
       filetype = "blade",
     }
 
+    parser_config.edge = {
+      install_info = {
+        url = "https://github.com/EmranMR/tree-sitter-blade",
+        files = {
+          "src/parser.c",
+          -- 'src/scanner.cc',
+        },
+        branch = "main",
+        generate_requires_npm = true,
+        requires_generate_from_grammar = true,
+      },
+      filetype = "edge",
+    }
+
     require("nvim-treesitter.configs").setup(opts)
   end,
 }
