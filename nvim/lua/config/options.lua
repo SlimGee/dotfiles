@@ -4,3 +4,4 @@
 --
 vim.g.lazyvim_ruby_lsp = "solargraph"
 vim.g.lazyvim_ruby_formatter = "rubocop"
+vim.g.lazyvim_php_lsp = "intelephense"

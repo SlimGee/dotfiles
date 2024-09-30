@@ -8,7 +8,8 @@ return {
         "tailwindcss-language-server",
         "css-lsp",
         "css-variables-language-server",
-        "intelephense",
+        --"intelephense",
+        "phpactor",
       },
     },
   },
@@ -35,11 +36,11 @@ return {
       css_variables = {
         enabled = true,
       },
-      intelephense = {
+      phpactor = {
         enabled = true,
         filetypes = { "php", "blade", "php_only" },
         settings = {
-          intelephense = {
+          phpactor = {
             filetypes = { "php", "blade", "php_only" },
             files = {
               associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
