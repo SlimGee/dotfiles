@@ -18,16 +18,19 @@ return {
       html = {
         enabled = true,
         files = {
-          associations = { "*.html", "*.css", "*.scss", "*.js", "*.jsx", "*.ts", "*.tsx", "*.edge" },
+          associations = { "*.html", "*.css", "*.scss", "*.js", "*.jsx", "*.ts", "*.tsx", "*.edge", "*.liquid" },
         },
       },
       stimulus_ls = {
         enabled = true,
+        files = {
+          associations = { "*.html", "*.css", "*.scss", "*.js", "*.jsx", "*.ts", "*.tsx", "*.edge", "*.liquid" },
+        },
       },
       tailwindcss = {
         enabled = true,
         files = {
-          associations = { "*.html", "*.css", "*.scss", "*.js", "*.jsx", "*.ts", "*.tsx", "*.edge" },
+          associations = { "*.html", "*.css", "*.scss", "*.js", "*.jsx", "*.ts", "*.tsx", "*.edge", "*.liquid" },
         },
       },
       cssls = {

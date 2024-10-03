@@ -1,4 +1,6 @@
 local util = require("conform.util")
+local fs = require("conform.fs")
+
 return {
   "stevearc/conform.nvim",
   dependencies = {
@@ -51,6 +53,7 @@ return {
         blade = { "blade-formatter", "rustywind" },
         javascript = { "prettier" },
         typescript = { "prettier" },
+        liquid = { "prettier", "rustywind" },
         html = { "prettier", "rustywind" },
         json = { "jq" },
       },
@@ -70,6 +73,7 @@ return {
         -- shfmt = {
         --   prepend_args = { "-i", "2", "-ci" },
         -- },
+
         pint = {
           meta = {
             url = "https://github.com/laravel/pint",
