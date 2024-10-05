@@ -13,7 +13,7 @@ return {
         "pretty-php",
         "blade-formatter",
         "pint",
-        "standardrb",
+        "rubocop",
         "yamlfmt",
         "stylua",
         "jq",
@@ -44,7 +44,7 @@ return {
       formatters_by_ft = {
         eruby = { "erb_format", "rustywind" },
         css = { "prettierd" },
-        ruby = { "standardrb" },
+        ruby = { "rubocop" },
         lua = { "stylua" },
         fish = { "fish_indent" },
         sh = { "shfmt" },
