@@ -10,6 +10,7 @@ return {
         "css-variables-language-server",
         --"intelephense",
         "phpactor",
+        "angular-language-server",
       },
     },
   },
@@ -37,6 +38,9 @@ return {
         enabled = true,
       },
       css_variables = {
+        enabled = true,
+      },
+      angluarls = {
         enabled = true,
       },
       phpactor = {
