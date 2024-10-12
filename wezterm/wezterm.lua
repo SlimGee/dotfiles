@@ -26,7 +26,7 @@ config.inactive_pane_hsb = {
 	brightness = 0.5,
 }
 
-config.font = wezterm.font("MesloLGS Nerd Font Mono", { weight = "Bold" })
+config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
 
 wezterm.on("update-right-status", function(window, _)
 	local SOLID_LEFT_ARROW = ""
