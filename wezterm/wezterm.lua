@@ -26,6 +26,13 @@ config.inactive_pane_hsb = {
 	brightness = 0.5,
 }
 
+config.window_padding = {
+	left = 2,
+	right = 2,
+	top = 0,
+	bottom = 0,
+}
+
 config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
 
 wezterm.on("update-right-status", function(window, _)
