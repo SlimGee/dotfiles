@@ -8,7 +8,6 @@ return {
     opts = {
       ensure_installed = {
         "rustywind",
-        "prettier",
         "prettierd",
         "pretty-php",
         "blade-formatter",
@@ -17,6 +16,7 @@ return {
         "yamlfmt",
         "stylua",
         "jq",
+        "pint",
       },
     },
   },
@@ -51,10 +51,10 @@ return {
         yaml = { "yamlfmt" },
         php = { "pint" },
         blade = { "blade-formatter", "rustywind" },
-        javascript = { "prettier" },
-        typescript = { "prettier" },
-        liquid = { "prettier", "rustywind" },
-        html = { "prettier", "rustywind" },
+        javascript = { "prettierd" },
+        typescript = { "prettierd" },
+        liquid = { "prettierd", "rustywind" },
+        html = { "prettierd", "rustywind" },
         json = { "jq" },
       },
       -- The options you set here will be merged with the builtin formatters.
