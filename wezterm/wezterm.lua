@@ -27,13 +27,14 @@ config.inactive_pane_hsb = {
 }
 
 config.window_padding = {
-	left = 2,
-	right = 2,
-	top = 0,
-	bottom = 0,
+	left = 1,
+	right = 1,
+	top = 4,
+	bottom = 2,
 }
 
 config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
+config.font_size = 11
 
 wezterm.on("update-right-status", function(window, _)
 	local SOLID_LEFT_ARROW = ""
