@@ -11,7 +11,7 @@ right = [ "SystemInfo", [  "Tray", "Clock", "Privacy", "Settings" ] ]
 
 [updates]
 check_cmd = "checkupdates; paru -Qua"
-update_cmd = 'alacritty -e bash -c "paru; echo Done - Press enter to exit; read" &'
+update_cmd = 'wezterm start bash -c "paru; echo Done - Press enter to exit; read" &'
 
 [workspaces]
 enable_workspace_filling = true

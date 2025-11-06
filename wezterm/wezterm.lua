@@ -6,6 +6,7 @@ local config = wezterm.config_builder()
 local act = wezterm.action
 
 config.enable_wayland = false
+config.warn_about_missing_glyphs = false
 
 -- This is where you actually apply your config choices
 
@@ -34,7 +35,7 @@ config.window_padding = {
 }
 
 config.font = wezterm.font("JetBrains Mono", { weight = "Medium" })
-config.font_size = 11
+config.font_size = 10
 
 wezterm.on("update-right-status", function(window, _)
 	local SOLID_LEFT_ARROW = ""
@@ -69,10 +70,10 @@ config.keys = {
 	{ key = "-", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 	-- SHIFT is for when caps lock is on
 	{ key = "|", mods = "LEADER|SHIFT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-	{ key = "h", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
+	{ key = "h", mods = "LEADER", action = act.ActivateTabRelative(-1) },
 	{ key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
 	{ key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
-	{ key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
+	{ key = "l", mods = "LEADER", action = act.ActivateTabRelative(1) },
 	{ key = "x", mods = "LEADER", action = act.CloseCurrentPane({ confirm = true }) },
 	{ key = "z", mods = "LEADER", action = act.TogglePaneZoomState },
 	{ key = "s", mods = "LEADER", action = act.RotatePanes("Clockwise") },
